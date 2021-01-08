@@ -13,11 +13,14 @@ body {
   font-size: 100%;
   font-family: "Open Sans", sans-serif;
   color: #445b7c;
+  /*color: #000000;*/
   background-color: #445b7c;
+  /*background-color: #000000;*/
 }
 
 a {
   color: #dc717d;
+  /*color: #000000;*/
   text-decoration: none;
 }
 
@@ -40,6 +43,8 @@ header h1 {
   font-size: 22px;
   font-size: 1.375rem;
   color: #ffffff;
+  /*color: #000000;*/
+
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -70,6 +75,7 @@ header h1 {
   bottom: 0;
   right: 0;
   color: #ffffff;
+  /*color: #000000;*/
   padding: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -188,6 +194,7 @@ header h1 {
 .cd-handle.draggable {
   /* change background color when element is active */
   background-color: #445b7c;
+  /*background-color: #000000; */
 }
 .is-visible .cd-handle {
   opacity: 1;
