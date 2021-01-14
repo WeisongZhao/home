@@ -37,6 +37,9 @@
           <li class="nav-item">
             <a class="nav-link" href="portfolio-2-col.html">Open-source</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="portfolio-3-col.html">Publications</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
@@ -46,76 +49,95 @@
   </nav>
 
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('./resources/4-3.gif')">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Bayes Light-field microscopy</h1>
-            <p>Atifacts-free, subcellular resolution (240 nm x 310 nm), single-shot three-dimensional microscopy, the revolution on the live 3D biological imaging. (Mitochondrial color-coded 3D images)</p>
-          </div>
-        </div>
+  	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  		<ol class="carousel-indicators">
+  			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  			<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  		</ol>
+  		<div class="carousel-inner" role="listbox">
+  			<!-- Slide One - Set the background image for this slide in the line below -->
+  			<div class="carousel-item active" style="background-image: url('./resources/4-3.gif')">
+  				<div class="carousel-caption d-none d-md-block">
 
-        <!-- Slide Four -  helps to dissect organelle interactome and enabling hour-long time-lapse super-resolution imaging of actin filaments in live cells -->
-        <div class="carousel-item" style="background-image: url('resources/ActinSIM.gif')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Sparse-SIM</h3>
-            <p>The ultrafast and long-term fluorescent super-resolution imaging. (60 nm resolution, Actin in 188Hz) </p>
-          </div>
-        </div>
+  					<h3>
+  						<strong style="background:rgba(0,0,0,0.5)">
+  							Bayes Light-field microscopy
+  						</strong>
+  					</h3>
+  					<p><strong style="background:rgba(0,0,0,0.5)">Atifacts-free, subcellular resolution (240 nm x 310 nm), single-shot three-dimensional microscopy, the revolution on the live 3D biological imaging. (Mitochondrial color-coded 3D images).</strong></p>
 
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('resources/DL.gif')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Deep-learning</h3>
-            <p>Data driven microscopy.</p>
-          </div>
-        </div>
+  				</div>
+  			</div>
+
+  			<!-- Slide Four -  helps to dissect organelle interactome and enabling hour-long time-lapse super-resolution imaging of actin filaments in live cells -->
+  			<div class="carousel-item" style="background-image: url('./resources/ActinSIM.gif')">
+  				<div class="carousel-caption d-none d-md-block">
+  					<h3>
+  						<strong style="background:rgba(0,0,0,0.5)">
+  							Sparse-SIM
+  						</strong>
+  					</h3>
+  					<p><strong style="background:rgba(0,0,0,0.5)">The ultrafast and long-term fluorescent super-resolution imaging. (60 nm resolution, Actin in 188Hz).</strong></p>
+  				</div>
+  			</div>
+
+  			<!-- Slide Two - Set the background image for this slide in the line below -->
+  			<div class="carousel-item" style="background-image: url('./resources/DL.gif')">
+  				<div class="carousel-caption d-none d-md-block">
+			<h3>
+  						<strong style="background:rgba(0,0,0,0.5)">
+  							Deep-learning
+  						</strong>
+  					</h3>
+  					<p><strong style="background:rgba(0,0,0,0.5)">Data driven microscopy.</strong></p>
+
+  				</div>
+  			</div>
 
       <!-- https://ws2.sinaimg.cn/large/006tNc79ly1fzjari2vzvj30hp07tagl.jpg
-        Slide Three - Set the background image for this slide in the line below -->
+      	Slide Three - Set the background image for this slide in the line below -->
 
-        <div class="carousel-item" style="background-image: url('resources/MLFM.png')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Miniaturized light-field microscopy</h3>
-            <p>High-speed volumetric imaging of neuronal activity in freely moving rodents.</p>
-          </div>
-        </div>
-        <!-- Slide Four - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('resources/S3I.png')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Label-free super-resolution imaging</h3>
-            <p style="background:rgba(0,0,0,0.5)"><b>It has the potencial to lead a new way of super-resolution live-cell imaging without any photodamage.</font></b></p>
-          </div>
-        </div>
-        <!-- Slide Four - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('resources/ConfocalSIM.gif')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Multi-color Spinning-disk confocal SIM (SD-SIM) imaging</h3>
-            <p>Dissecting the organelle interactome (100 nm resolution) with less than at least 3% of the photon dose used by conventional confocal microscopy using new reconstruction method.</p>
-          </div>
-        </div>
+      	<div class="carousel-item" style="background-image: url('./resources/MLFM.png')">
+      		<div class="carousel-caption d-none d-md-block">
+      			<h3>
+      				<strong style="background:rgba(0,0,0,0.5)">
+      					Miniaturized light-field microscopy
+      				</strong>
+      			</h3>
+      			<p><strong style="background:rgba(0,0,0,0.5)">High-speed volumetric imaging of neuronal activity in freely moving rodents.</strong></p>
 
+      		</div>
+      	</div>
+      	<!-- Slide Four - Set the background image for this slide in the line below -->
+      	<div class="carousel-item" style="background-image: url('./resources/S3I.png')">
+      		<div class="carousel-caption d-none d-md-block">
 
-        <!-- Slide Four - Set the background image for this slide in the line below -->
-    <!--
-    <div class="carousel-item" style="background-image: url('https://ws4.sinaimg.cn/large/006tNc79ly1fzk7afu4eyg30e807wdop.gif')">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Third Slide</h3>
-        <p>This is a description for the third slide.</p>
+      			<h3>
+      				<strong style="background:rgba(0,0,0,0.5)">
+      					Label-free super-resolution imaging
+      				</strong>
+      			</h3>
+      			<p><strong style="background:rgba(0,0,0,0.5)">It has the potencial to lead a new way of super-resolution live-cell imaging without any photodamage.</strong></p>
+      		</div>
+      	</div>
+      	<!-- Slide Four - Set the background image for this slide in the line below -->
+      	<div class="carousel-item" style="background-image: url('./resources/ConfocalSIM.gif')">
+      		<div class="carousel-caption d-none d-md-block">
+      			<h3>
+      				<strong style="background:rgba(0,0,0,0.5)">
+      					Multi-color Spinning-disk confocal SIM (SD-SIM) imaging
+      				</strong>
+      			</h3>
+      			<p><strong style="background:rgba(0,0,0,0.5)">Dissecting the organelle interactome (100 nm resolution) with less than at least 3% of the photon dose used by conventional confocal microscopy using new reconstruction method.</strong></p>
+      		</div>
+      	</div>
       </div>
-    </div> -->
-  </div>
 
-</div>
+  </div>
 
 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
