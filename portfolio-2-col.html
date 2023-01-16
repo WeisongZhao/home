@@ -121,20 +121,50 @@
         </div>
         <div class="col-md-5">
           <h3 id="SACD">SACD</h3>
-          <p>A faster super resolution reconstruction method needs 10 times less frames.</p>
-          <a class="btn btn-primary" href="https://github.com/WeisongZhao/SACD">MATLAB
+          <p>1. SACD only needs 20 frames to achieve twofold lateral and axial resolution improvements.<br>
+            2. SACD requires no additional optical components, and can offer a direct and flexible add-on super-resolution feature on any <i>off-the-shelf</i> commercialized microscopes or <i>in-house</i> customized systems.<br>
+            3. Sparse deconvolution-assisted SACD (Sparse-SACD) allows fast 4D super-resolution live-cell imaging.
+          </p>
+          <a class="btn btn-primary" href="https://github.com/WeisongZhao/SACDm">MATLAB
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-          <a class="btn btn-primary" href="404.html">Java
+          <a class="btn btn-primary" href="https://github.com/WeisongZhao/SACDj">Java
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-          <a class="btn btn-primary" href="404.html">ImageJ plugin
+          <a class="btn btn-primary" href="https://github.com/WeisongZhao/SACDj/raw/main/SACDj_-1.1.3.jar">ImageJ plugin
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
       </div>
       <!-- /.row -->
       <hr style="border-color:#000000;">
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="img/OS11.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3 id="rFRC & PANEL">PANEL</h3>
+          <p><b>rFRC:</b> The rolling Fourier ring correlation (rFRC) is for quantitatively mapping the local image quality (effective resolution, data uncertainty). The lower effective resolution gives a higher probability to the error existence, and thus we can use it to represent the uncertainty revealing the error distribution.
+          <br><b>PANEL:</b> We also accompany our filtered rFRC with truncated RSM (resolution-scaled error map) as a full PANEL (pixel-level analysis of error locations) map, but this RSM is an optional feature that can be turn off as the wide-field reference being unavailable. PANEL is for biologists to qualitatively pinpoint regions with low reliability as a concise visualization.</p>
+          <a class="btn btn-primary" href="https://github.com/WeisongZhao/PANELM">MATLAB
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+          <a class="btn btn-primary" href="https://github.com/WeisongZhao/PANELpy">Python
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>          
+          <a class="btn btn-primary" href="https://github.com/WeisongZhao/PANELJ">Java
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+          <a class="btn btn-primary" href="https://github.com/WeisongZhao/PANELJ/raw/main/PANELJ_-0.2.5.jar">ImageJ plugin
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+      <hr style="border-color:#000000;">      
       <!-- Project Two -->
       <div class="row">
         <div class="col-md-7">
@@ -168,28 +198,7 @@
         </div>
       </div>
       <hr style="border-color:#000000;">
-      <!-- Project Two -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/OS11.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>PANEL</h3>
-          <p>Coming soon</p>
-          <a class="btn btn-primary" href="404.html">MATLAB
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <a class="btn btn-primary" href="404.html">Java
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <a class="btn btn-primary" href="404.html">ImageJ plugin
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
-      </div>
-      <hr style="border-color:#000000;">
+
       <div class="row">
         <div class="col-md-7">
           <a href="#">
@@ -197,7 +206,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Bayes Light-field microscopy Matlab toolbox</h3>
+          <h3 id="Bayes-LFM">Bayes Light-field microscopy Matlab toolbox</h3>
           <p>Atifacts-free, diffraction-limit resolution, single-shot three-dimensional microscopy, the revolution on the live 3D biological imaging. This repo. provides the Matlab toolbox (including GUI) for LFM volume reconstruction.
             <br><b>Basic features</b>:
           <br>1. Calculate LF PSF;  <br>2. Image rectification;  <br>3. Reconstructed LF volume; <br>4. Bayes reconstruction;  <br>5. Automatic tracking of mitochondrial dynamics;  </p>

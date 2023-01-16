@@ -157,17 +157,18 @@
     <div class="row">
       <div class="col-md-7">
         <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="./resources/" alt="">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="./resources/PANEL.png" alt="">
         </a>
       </div>
       <div id="PANEL" class="col-md-5">
         <h3>PANEL</h3>
-        <p>PANEL (pixel-level analysis of error locations) framework for quantitatively mapping reconstruction errors at super-resolution scale (can assess both conventional and deep-learning methods).</p>
-        <a class="btn btn-primary" href="404.html">Paper
+        <p>PANEL (pixel-level analysis of error locations) framework for quantitatively mapping reconstruction quality at super-resolution scale (can assess both conventional and deep-learning methods).<br><b>rFRC:</b> The rolling Fourier ring correlation (rFRC) is for quantitatively mapping the local image quality (effective resolution, data uncertainty). The lower effective resolution gives a higher probability to the error existence, and thus we can use it to represent the uncertainty revealing the error distribution.
+        <br><b>PANEL:</b> We also accompany our filtered rFRC with truncated RSM (resolution-scaled error map) as a full PANEL map, but this RSM is an optional feature that can be turn off as the wide-field reference being unavailable. PANEL is for biologists to qualitatively pinpoint regions with low reliability as a concise visualization.</p>
+        <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.01.518675">Pre-print
           <span class="glyphicon glyphicon-chevron-right"></span></a>
-          <a class="btn btn-primary" href="404.html">Code
+          <a class="btn btn-primary" href="portfolio-2-col.html#PANEL">Code
           <span class="glyphicon glyphicon-chevron-right"></span></a>
-          <a class="btn btn-primary" href="404.html">Gallery
+          <a class="btn btn-primary" href="portfolio-4-col.html#PANEL">Gallery
           <span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
     </div>
@@ -177,13 +178,18 @@
     <div class="row">
       <div class="col-md-7">
         <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="./resources/SACD model.png" alt="">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="./resources/SACD.png" alt="">
         </a>
       </div>
       <div id="SACD" class="col-md-5">
         <h3>SACD</h3>
-        <p>A faster fluorescence fluctuation-based super resolution reconstruction method needs ~50 times less frames.</p>
-        <a class="btn btn-primary" href="https://arxiv.org/abs/1809.07410">Paper
+        <p>
+          SACD (super-resolution method based on auto-correlation with two-step deconvolution): A faster fluorescence fluctuation-based super resolution reconstruction method needs ~50 times less frames.<br>
+          1. SACD only needs 20 frames to achieve twofold lateral and axial resolution improvements.<br>
+          2. SACD requires no additional optical components, and can offer a direct and flexible add-on super-resolution feature on any off-the-shelf commercialized microscopes or in-house customized systems.<br>
+          3. Sparse deconvolution-assisted SACD (Sparse-SACD) allows fast 4D super-resolution live-cell imaging.
+        </p>
+        <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.12.520072">Pre-print
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="portfolio-2-col.html#SACD">Code
           <span class="glyphicon glyphicon-chevron-right"></span></a>
