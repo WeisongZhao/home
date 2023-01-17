@@ -106,7 +106,7 @@
       </div>
       <div id="SparseDecon" class="col-md-5">
         <h3>Sparse deconvolution</h3>
-        <p><b>An universal post-processing framework for fluorescence microscopy.</b> Taking advantage of a priori knowledge of the sparsity and continuity of biological structures, we develop a deconvolution algorithm that extends twofold resolution beyond physical limits posed by any existing microscopic hardware for the first time.</p>       
+        <p><b>An universal post-processing framework for fluorescence microscopy.</b> Taking advantage of the prior knowledge of the microscopy PSF-induced sparsity and continuity, we develop a multiconstrained deconvolution algorithm that extends twofold resolution beyond physical limits posed by any existing microscopy hardware under low SNR conditions.</p>       
         <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="portfolio-2-col.html#Sparse-deconvolution">Code
@@ -121,8 +121,8 @@
         <img class="img-fluid rounded mb-3 mb-md-0" src="./resources/Sparse-SIM.png" alt="">
       </div>
       <div id="SparseSIM" class="col-md-5">
-        <h3>Ultrafast, 60 nm Sparse-SIM</h3>
-        <p>The Sparse deconvolution assisted structured illumination microscopy (Sparse-SIM) achieves ~60 nm resolution at a temporal resolvability of ~2 ms, allowing it to resolve intricate structures, including small vesicular fusion pores and relative movements between the inner and outer membranes of mitochondria in live cells.        
+        <h3>Ultrafast, 60 nm, 564 Hz Sparse-SIM</h3>
+        <p>The Sparse deconvolution assisted structured illumination microscopy (Sparse-SIM) achieves ~60 nm resolution at a temporal resolvability of ~2 ms (~564 Hz), allowing it to resolve intricate structures, including small vesicular fusion pores and relative movements between the inner and outer membranes of mitochondria in live cells.        
         </p>
          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
           <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -141,8 +141,8 @@
         <!--               <object width="500" height="500" data="https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-021-01092-2/MediaObjects/41587_2021_1092_MOESM4_ESM.mp4"></object> -->
       </div>
       <div id="SparseSDSIM" class="col-md-5">
-        <h3>Multi-color, 90 nm × 260 nm 3D super-resolution confocal imaging</h3>
-        <p>The Sparse deconvolution assisted super-resolution confocal microscopes (Sparse SD-SIM) for visualizing dynamic processes (3% photon damage & 90 nm resolution) within cells (3D + 4 colors).        
+        <h3>Multi-color, 90 nm × 260 nm, 3D super-resolution confocal microscopy</h3>
+        <p>The Sparse deconvolution-assisted super-resolution confocal microscopes (Sparse SD-SIM) for visualizing dynamic processes (3% photon damage & 90 nm resolution) within cells (3D + 4 colors).        
         </p>
          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
           <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -162,7 +162,7 @@
       </div>
       <div id="PANEL" class="col-md-5">
         <h3>PANEL</h3>
-        <p>PANEL (pixel-level analysis of error locations) framework for quantitatively mapping reconstruction quality at super-resolution scale (can assess both conventional and deep-learning methods).<br><b>rFRC:</b> The rolling Fourier ring correlation (rFRC) is for quantitatively mapping the local image quality (effective resolution, data uncertainty). The lower effective resolution gives a higher probability to the error existence, and thus we can use it to represent the uncertainty revealing the error distribution.
+        <p>PANEL (pixel-level analysis of error locations) framework for quantitatively mapping reconstruction quality at super-resolution scale (can assess both conventional and deep-learning methods).<br><br><b>rFRC:</b> The rolling Fourier ring correlation (rFRC) is for quantitatively mapping the local image quality (effective resolution, data uncertainty). The lower effective resolution gives a higher probability to the error existence, and thus we can use it to represent the uncertainty revealing the error distribution.
         <br><b>PANEL:</b> We also accompany our filtered rFRC with truncated RSM (resolution-scaled error map) as a full PANEL map, but this RSM is an optional feature that can be turn off as the wide-field reference being unavailable. PANEL is for biologists to qualitatively pinpoint regions with low reliability as a concise visualization.</p>
         <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.01.518675">Pre-print
           <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -184,7 +184,7 @@
       <div id="SACD" class="col-md-5">
         <h3>SACD</h3>
         <p>
-          SACD (super-resolution method based on auto-correlation with two-step deconvolution): A faster fluorescence fluctuation-based super resolution reconstruction method needs ~50 times less frames.<br>
+          SACD (super-resolution method based on auto-correlation with two-step deconvolution): A faster fluorescence fluctuation-based super resolution reconstruction method needs ~50 times less frames.<br><br>
           1. SACD only needs 20 frames to achieve twofold lateral and axial resolution improvements.<br>
           2. SACD requires no additional optical components, and can offer a direct and flexible add-on super-resolution feature on any off-the-shelf commercialized microscopes or in-house customized systems.<br>
           3. Sparse deconvolution-assisted SACD (Sparse-SACD) allows fast 4D super-resolution live-cell imaging.
