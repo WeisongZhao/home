@@ -242,6 +242,7 @@
 								<br><b>(1)</b> <a href="portfolio-1-col.html#SparseDecon">Sparse deconvolution</a> algorithm for extending spatial resolution, contrast and SNR of fluorescence microscopes limited by the optics (applications: <a href="portfolio-1-col.html#SparseSIM">Sparse-SIM</a> & <a href="portfolio-1-col.html#SparseSDSIM">Sparse SD-SIM</a>);
 								<br><b>(2)</b> <a href="portfolio-1-col.html#PANEL">PANEL</a> (pixel-level analysis of error locations) framework for quantitatively mapping reconstruction errors at super-resolution scale, which can assess both conventional and deep-learning methods;
 								<br><b>(3)</b> <a href="portfolio-1-col.html#SACD">SACD</a> (super-resolution method based on the auto-correlation with two-step deconvolution), a fully automatic super-resolution method that can realize a twofold 3D resolution improvement using only 20 frames without needing additional optical components.
+								<br><b>(4)</b> <a href="https://doi.org/10.1038/s41586-026-10889-7">RIED</a> (reaction-luminescence imaging with entropy-weighted deconvolution), a super-resolution framework developed for photon-limited reaction-based luminescence imaging, including bioluminescence (BL) and electrochemiluminescence (ECL). RIED enables super-resolution imaging without external optical excitation or photochemical modulation by extracting and decoding intrinsic spatiotemporal fluctuations from extremely low-photon luminescence signals. It enables high-contrast 2D and 3D super-resolution imaging, extending super-resolution microscopy beyond conventional fluorescence-based approaches.
 								<br><br><b>Related technologies:</b><br>
 								<i>Label-free: Endoscopic/label-free-super-resolution/optical-diffraction-tomography microscopy;<br>Fluorescence: (miniaturized) SIM/SOFI/SMLM/light-field/multi-photon/confocal microscopy.</i>
 							</p>
@@ -259,7 +260,8 @@
 							<p class="card-text">
 								We are using the available prior knowledge to design specific algorithms to analyze and reconstruct the multi-dimensional bio/natural signals (<b>non-deep model</b>). On the other hand, taking advantage of priors from data, <b>deep-learning</b> has the fascinating character (e.g., automatic feature extraction) on solving the problems that can never be solved by conventional ways. He is also using deep-learning to reduce the photon / time / hardware budgets of microscopy, as well as employing (self-supervised, representation, Bayesian) deep-learning to speed up the data profiling pipeline of biologists.
 								<br><br><i>The techniques developed included the</i>
-								<br><b>(1)</b> <a href="portfolio-1-col.html#SN2N">SN2N </a> (self-inspired Noise2Noise), an unsupervised learning-to-denoise engin, which is fully competitive with the supervised learning methods and overcomes the need for large dataset and clean ground-truth. <br>
+								<br><b>(1)</b> <a href="portfolio-1-col.html#SN2N">SN2N </a> (self-inspired Noise2Noise), an unsupervised learning-to-denoise engin, which is fully competitive with the supervised learning methods and overcomes the need for large dataset and clean ground-truth. 
+								<br><b>(2)</b> <a href="https://www.sciengine.com/PXLIFE/doi/10.3724/PXLIFE.2025-0010">aSN2N</a> (adaptive SN2N), an adaptive self-supervised denoising framework that stabilizes learning across diverse imaging conditions while effectively suppressing background artifacts.<br>
 								<br><br><b>Related technologies:</b><br> <i>Non-deep model: Deconvolution, denoise, phase retrieval, optical tracking, segmentation, and Bayesian inference.<br> Deep-learning: Cross-modality, low-level transformation, segmentation, visual-relationship.</i>
 							</p>
 							<img class="img-fluid rounded mb-3 mb-md-0" src="resources/NN-w.png" alt="">
@@ -280,8 +282,10 @@
 								We are devising high-level algorithms for bioimage analysis to help the biologists to automatically analyze large amounts of image data, reproducibly extract quantitative information from images, and quantify the dynamics, form, and structure of cells and organisms.
 								<br><br><i>The techniques developed included the</i>
 								<br><b>(1)</b> <a href="portfolio-1-col.html#SOHA">Smart palm-size optofluidic hematology analyzer</a> for automated imaging-based leukocyte concentration detection. <br>
-								<br><b>(2)</b> <a href="portfolio-1-col.html#endoscope">MIRD</a> a highly flexible, compact, single-shot volumetric, high-resolution, endoscopic probe by employing precision-machined multiple micro-imaging devices (MIRD). <br>
-								<br><b>(3)</b> <a href="portfolio-1-col.html#SARS">Sparse confocal microscopy with single particle tracking </a> for uncover that SARS-CoV-2 virus-like particles utilize filopodia to reach the entry site in two patterns, “surfing” and “grabbing”, which avoid the virus from randomly searching on the plasma membrane.. <br>								
+
+								<br><b>(2)</b> <a href="portfolio-1-col.html#endoscope">Light-field endoscopic probes</a>, initiated with MIRD (multiple micro-imaging devices), provide highly flexible and compact probes for single-shot, high-resolution volumetric imaging. We continue to develop new optical designs and computational imaging strategies to improve the imaging capability and practical applicability of this platform. See also <a href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">[Optics and Lasers in Engineering, 2026]</a> <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">[Optics Express, 2026]</a><br>
+
+								<br><b>(3)</b> <a href="portfolio-1-col.html#SARS">Sparse confocal microscopy with single particle tracking </a> for uncover that SARS-CoV-2 virus-like particles utilize filopodia to reach the entry site in two patterns, “surfing” and “grabbing”, which avoid the virus from randomly searching on the plasma membrane. See also <a href="https://www.sciencedirect.com/science/article/pii/S0171933525000305">[European Journal of Cell Biology, 2025]</a> <br>								
 							</p>
 						</div>
 						<div class="card-footer">
@@ -301,26 +305,44 @@
 								<!-- 		<div style="float:right; border:1px #000000 solid;" >
 									<a class="twitter-timeline" data-width="300" data-height="750" data-dnt="true" data-theme="light" href="https://twitter.com/weisong_zhao?ref_src=twsrc%5Etfw">Tweets by weisong_zhao</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								</div> -->
-								
-								<b>2024-09:</b> Our SN2N work is online at <a href="https://www.nature.com/articles/s41592-024-02400-9">Nature Methods</a>;<br><br>
+								<b style="color:#dc3545;">2024-09:</b> Our RIED work is online at <a href="https://www.nature.com/articles/s41586-026-10889-7">Nature</a>;<br><br>
+								<b>2026-07:</b> Congrats to Jiahui Gui, the Ph.D. student from the lab and co-first author, on the acceptance of our RIED work in <i>Nature</i>!<br><br>								
+								<b style="color:#dc3545;">2026-04:</b> Congrats to Deer Su, the Ph.D. student from the lab, on successfully defending his Ph.D. dissertation!<br><br>
+								<b>2026-04:</b> Congrats to Deer Su, the Ph.D. student from the lab. Two studies advancing light-field endoscopic probes have been published in <a href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">Optics and Lasers in Engineering</a> and <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">Optics Express</a>;<br><br>
+
+								<b>2026-02:</b> Congrats to Jiahui Gui, the Ph.D. student from the lab. <a href="https://www.biorxiv.org/content/10.64898/2026.02.04.703714v1">RIED</a> is released as a bioRxiv preprint, together with the <a href="https://github.com/SR-Wiki/RIEDm">MATLAB</a> toolkit;
+								<hr>
+
+								<b>2025-08:</b> <a href="https://doi.org/10.1101/2025.08.20.671215">FLAME</a> is released as pre-prints, and <a href="https://github.com/SR-Wiki/FLAMEm">MATLAB</a> toolkit;<br><br>
+
+								<b>2025-08:</b> Our collaborated work, EPSLON has been published in <a href="https://www.nature.com/articles/s41377-025-01914-x">Light: Science & Applications</a>;<br><br>
+
+								<b>2025-07:</b> <a href="https://github.com/SR-Wiki/">SR-Wiki</a> is now the official GitHub organization of the Weisong Zhao Lab for releasing our latest imaging and analysis tools. SR-Wiki Represents WeisongZhao-lab’s imaging-tool kit implementation.;<br><br>
+
+								<b>2025-06:</b> Congrats to Jingyang Zhu Qu, the Ph.D. student from the lab. Adaptive SN2N has been published in <a href="https://www.sciengine.com/PXLIFE/doi/10.3724/PXLIFE.2025-0010">PhotoniX Life</a>;<br><br>
+
+								<b>2025-09:</b> Weisong Zhao has been promoted as a <a href="http://homepage.hit.edu.cn/weisongzhao">Tenured Professor</a> at Harbin Institute of Technology;<br><br> 							
+								<b>2025-04:</b> Congrats to Liying Qu, the Associate Investigator from the lab. Our Commentary of SN2N is online at <a href="https://www.nature.com/articles/s41592-024-02400-9">Clinical and Translational Medicine</a>;
+								<hr>
+								<b style="color:#dc3545;">2024-09:</b> Our SN2N work is online at <a href="https://www.nature.com/articles/s41592-024-02400-9">Nature Methods</a>;<br><br>
 								<b>2024-08:</b> Dr. Weisong Zhao has been supported by the National Science Foundation for Outstanding Young Scholars of China;<br><br>
 								<b>2024-06:</b> Congrats to Liying Qu & Yuanyuan Huang, the Ph.D. students from the lab. <a href="https://doi.org/10.1101/2024.01.23.576521">SN2N</a> has been accepted by <i>Nature Methods</i> for publication;<br><br>
 								<b>2024-01:</b> Congrats to Liying Qu & Yuanyuan Huang, the Ph.D. students from the lab. <a href="https://doi.org/10.1101/2024.01.23.576521">SN2N</a> is released as bioRxiv pre-print (under review at <i>Nature Methods</i>) and <a href="https://github.com/WeisongZhao/SN2N">Python</a> toolkit;<br><br>
 								<b>2024-01:</b> Dr. Ke Xu wrote a <a href="https://www.nature.com/articles/s41377-024-01379-4">News & views</a> at <i>Light: Science & Applications</i> entitled "Mapping super-resolution image quality" for our <i>rFRC</i> work;<br><br>
-								<b>2024-01:</b> Weisong Zhao has passed the new position at Harbin Institute of Technology as an <a href="http://homepage.hit.edu.cn/weisongzhao">Full Professor;</a><br><br>
+								<b>2024-01:</b> Weisong Zhao has passed the new position at Harbin Institute of Technology as an <a href="http://homepage.hit.edu.cn/weisongzhao">Full Professor</a>;<br><br>
 
 								<b>2024-01:</b> Weisong Zhao now serves as an Associate Editor at <a href="https://www.nature.com/npjimaging/editors">npj Imaging;</a><br><br>
 								<img class="img-fluid rounded mb-3 mb-md-0" src="./img/news/npj.jpg"><br><hr>
 
-								<b>2023-12:</b> The <i>rFRC</i> is online at <a href="https://www.nature.com/articles/s41377-023-01321-0"> Light: Science & Applications</a>;<br><br>
+								<b style="color:#dc3545;">2023-12:</b> The <i>rFRC</i> work is online at <a href="https://www.nature.com/articles/s41377-023-01321-0"> Light: Science & Applications</a>;<br><br>
 								<b>2023-12:</b> Post a 'behind the paper' blog  regarding the <i>rFRC</i> at <a href="https://communities.springernature.com/posts/a-nice-piece-of-the-puzzle-for-super-resolution-microscopy">Nature Research Community</a>;<br><br>
 								<b>2023-12:</b> Congrats to Deer Su, the Ph.D. student from the lab. The <i>Smart palm-size optofluidic hematology analyzer</i> is online at <a href="https://doi.org/10.29026/oes.2023.230018"> Opto-Electronic Science</a> (invited);<br><br>
 								<b>2023-12:</b> Congrats to Deer Su, the Ph.D. student from the lab. The <i>MIRD volumetric endoscope</i> is online at <a href="https://doi.org/10.1364/OL.506261"> Optics Letters</a>, and is selected as the featured image of VOLUME 48, <a href="https://opg.optica.org/ol/issue.cfm?volume=48&issue=24">ISSUE 24</a>;<br><br>
 								
 								<b>2023-09:</b> Dr. David Baddeley wrote a <a href="https://www.nature.com/nphoton/volumes/17/issues/9">News & views at Nature Photonics</a> entitled "Deconvolution enhances fluctuation detection" for our <i>SACD</i> work;<br><br>
-								<b>2023-09:</b> The <i>SACD</i> is selected as the cover article of <a href="https://www.nature.com/nphoton/volumes/17/issues/9"> Nature Photonics Volume 17 Issue 9, September 2023</a>;<br><br>
+								<b style="color:#dc3545;">2023-09:</b> The <i>SACD</i> is selected as the cover article of <a href="https://www.nature.com/nphoton/volumes/17/issues/9"> Nature Photonics Volume 17 Issue 9, September 2023</a>;<br><br>
 								<b>2023-08:</b> Using <i>Sparse deconvolution</i>-enhanced confocal microscopy, we (with Yaming Jiu's group) reveal the processes of SARS-CoV-2 regulating and utilizing dynamic filopodia for viral invasion, published online at <a href="https://doi.org/10.1016/j.scib.2023.08.031"> Science Bulletin</a>;<br><br>
-								<b>2023-06:</b> Post a 'behind the paper' blog  regarding the <i>SACD</i> at <a href="https://engineeringcommunity.nature.com/posts/super-resolution-made-easier">Nature Research Community</a>;<br><br>
+								<b>2023-06:</b> Post a 'behind the paper' blog  regarding the <i>SACD</i> at <a href="https://communities.springernature.com/posts/super-resolution-made-easier">Nature Research Community</a>;<br><br>
 								<b>2023-06:</b> The <i>SACD</i> is online at <a href="https://doi.org/10.1038/s41566-023-01234-9"> Nature Photonics</a>;<br>
 								<hr>
 								<b>2022-12:</b> <a href="https://www.biorxiv.org/content/10.1101/2022.12.01.518675v1">PANEL</a> and <a href="https://www.biorxiv.org/content/10.1101/2022.12.12.520072v1">SACD</a> are released as pre-prints;<br><br>
@@ -330,24 +352,12 @@
 								<hr>
 								<!-- <p align="right">2021&nbsp;&nbsp;</p> -->
 								<b>2021-11:</b> A Python version with GPU accelartion of the <i>Sparse deconvolution</i> is released at <a href="https://github.com/WeisongZhao/sparse-deconv-py">GitHub</a>;<br><br>
-								<b>2021-11:</b> Post a 'behind the paper' blog  about the <i>Sparse deconvolution</i> at <a href="https://bioengineeringcommunity.nature.com/posts/physical-resolution-might-be-meaningless-if-in-the-mathmetical-space">Nature Research Community</a>;<br><br>
-								<b>2021-11:</b> The <i>Sparse deconvolution</i> is online at <a href="https://www.nature.com/articles/s41587-021-01092-2"> Nature Biotechnology</a>;<br><br>
+								<b>2021-11:</b> Post a 'behind the paper' blog  about the <i>Sparse deconvolution</i> at <a href="https://communities.springernature.com/posts/physical-resolution-might-be-meaningless-if-in-the-mathematical-space">Nature Research Community</a>;<br><br>
+								<b style="color:#dc3545;">2021-11:</b> The <i>Sparse deconvolution</i> is online at <a href="https://www.nature.com/articles/s41587-021-01092-2"> Nature Biotechnology</a>;<br><br>
 								<b>2021-07:</b> <a href="https://github.com/WeisongZhao/PANELM/">PANELM</a> and <a href="https://github.com/WeisongZhao/PANELJ/">PANELJ</a> are fully open-source;<br><br>
 								<b>2021-07:</b> The <i>Sparse deconvolution</i> is accepted by <i>Nature Biotechnology</i> for publication;<br><br>
 								<b>2021-03:</b> An OPEN scientific discussion about <i>deconvolution</i> is posted on <a href="https://weisongzhao.github.io/rl_positivity_sim/">GitHub</a> as well as on <a href="https://twitter.com/weisong_zhao/status/1370308101690118146">Twitter</a>;<br>
 								<hr>
-								<!-- <p><p align="right">2020&nbsp;&nbsp;</p> -->
-								<b>2020-11:</b> The <i>Sparse deconvolution</i> is fully open-source;<br><br>
-								<b>2020-09:</b> Invited talk on <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11497/114970V/Ultrafast-super-resolution-imaging-via-auto-correlation-two-step-deconvolution/10.1117/12.2567853.short?webSyncID=3c9d902b-c999-3ced-268b-ead49a28531a&sessionGUID=b0d3a6b0-3c97-c009-b6bc-d746b80d8e8a&SSO=1">SPIE Optical Engineering + Applications</a>, with a title <i>Ultrafast super-resolution imaging via auto-correlation two-step deconvolution</i> at Volume 11497, Ultrafast Nonlinear Imaging and Spectroscopy VIII; 114970V (2020)<br><br>
-								<b>2020-08:</b> The <i>Sparse deconvolution</i> is reviewed in <i>Nature Biotechnology</i> by three referees;<br><br>
-								<b>2020-01:</b> The <i>Sparse deconvolution</i> is reviewed in <i>Nature</i> by three referees;<br><br>
-								<b>2020-01:</b> <a href="https://weisongzhao.github.io/img2vid/">img2vid</a> v0.1.0 is released; <a href="https://weisongzhao.github.io/AdaptiveMedian.imagej/">Adaptive median filter imagej plugin</a> v0.1.0 is released; <a href="https://weisongzhao.github.io/Sparse-SIM/">The Sparse deconvolution </a> is released with <i>.p</i> code;
-								<hr>
-								<!-- <p align="right">2019&nbsp;&nbsp;</p> -->
-								<b>2019-08:</b> Visiting Martin Booth's lab and <i>National physics lab</i> in UK; &emsp;
-								<img src="./img/news/UK.jpg" width=250 alt="NPL">
-								
-								<!-- <h5><strong style="color:rgba(1,0,0,1)">2020</strong></h5> -->
 							</p>
 						</div>
 					</div>
